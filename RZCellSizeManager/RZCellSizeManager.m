@@ -191,7 +191,7 @@
 {
     self = [super init];
     if ( self ) {
-        _cellConfigurations = [NSMutableDictionary dictionary];
+        _cellConfigurations = [[NSMutableDictionary alloc] init];
         _cellSizeCache = [[NSCache alloc] init];
         _cellHeightPadding = kRZCellSizeManagerDefaultCellHeightPadding;
     }
